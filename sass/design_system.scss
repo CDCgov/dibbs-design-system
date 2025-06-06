@@ -43,6 +43,82 @@ a:visited {
   flex: 1 1 auto;
 }
 
+.usa-button {
+  background-color: $accent-primary;
+  box-shadow: inset 0 0 0 2px $accent-primary;
+
+  &:hover,
+  &--outline:hover {
+    box-shadow: inset 0 0 0 2px $accent-dark;
+    background-color: $accent-dark !important;
+  }
+
+  &:active,
+  &--outline:active {
+    box-shadow: inset 0 0 0 2px $accent-darker;
+    background-color: $accent-darker !important;
+  }
+
+  &--secondary {
+    background-color: $white;
+    box-shadow: inset 0 0 0 2px $accent-primary;
+    color: $accent-primary !important;
+  }
+
+  &--secondary:hover {
+    background-color: $white !important;
+    box-shadow: inset 0 0 0 2px $accent-dark;
+    color: $accent-dark !important;
+  }
+
+  &--secondary:active {
+    background-color: $white !important;
+    box-shadow: inset 0 0 0 2px $accent-darker;
+    color: $accent-darker !important;
+  }
+
+  &:disabled {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+    background-color: $diabled !important;
+  }
+
+  &--unstyled {
+    box-shadow: none;
+    color: $brand-primary;
+    background-color: transparent !important;
+  }
+
+  &--unstyled:hover {
+    box-shadow: none;
+    color: $brand-primary;
+    background-color: transparent !important;
+  }
+
+  &--unstyled:active {
+    box-shadow: none;
+    color: $brand-primary;
+    background-color: transparent !important;
+  }
+
+  &--destructive {
+    box-shadow: none;
+    color: $white;
+    background-color: $destructive-primary !important;
+  }
+  &--destructive:hover {
+    box-shadow: none;
+    color: $white;
+    background-color: $destructive-dark !important;
+  }
+  &--destructive:active {
+    box-shadow: none;
+    color: $white;
+    background-color: $destructive-darker !important;
+  }
+}
+
 .usa-alert--info {
   background-color: $brand-lighter;
   border-left-color: $brand-primary;
@@ -117,95 +193,6 @@ a:visited {
   color: $text-primary;
 }
 
-.usa-button {
-  background-color: $accent-primary;
-  box-shadow: inset 0 0 0 2px $accent-primary;
-
-  &:hover,
-  &--outline:hover {
-    box-shadow: inset 0 0 0 2px $accent-dark;
-    background-color: $accent-dark !important;
-  }
-
-  &:active,
-  &--outline:active {
-    box-shadow: inset 0 0 0 2px $accent-darker;
-    background-color: $accent-darker !important;
-  }
-
-  &--outline {
-    background-color: $white !important;
-    color: $accent-primary;
-  }
-  &--outline:hover {
-    background-color: $white !important;
-    color: $accent-dark;
-  }
-  &--outline:active {
-    background-color: $white !important;
-    color: $accent-darker;
-  }
-
-  &--secondary {
-    background-color: $white;
-    box-shadow: inset 0 0 0 2px $accent-primary;
-    color: $accent-primary !important;
-  }
-
-  &--secondary:hover {
-    background-color: $white !important;
-    box-shadow: inset 0 0 0 2px $accent-dark;
-    color: $accent-dark !important;
-  }
-
-  &--secondary:active {
-    background-color: $white !important;
-    box-shadow: inset 0 0 0 2px $accent-darker;
-    color: $accent-darker !important;
-  }
-
-  &:disabled {
-    box-shadow: none;
-    cursor: not-allowed;
-    opacity: 1;
-    background-color: $diabled !important;
-  }
-
-  &--unstyled {
-    box-shadow: none;
-    color: $brand-primary;
-    background-color: transparent !important;
-  }
-
-  &--unstyled:hover {
-    box-shadow: none;
-    color: $brand-primary;
-    background-color: transparent !important;
-  }
-
-  &--unstyled:active {
-    box-shadow: none;
-    color: $brand-primary;
-    background-color: transparent !important;
-  }
-
-  &--destructive {
-    box-shadow: none;
-    color: $white;
-    background-color: $destructive-primary !important;
-  }
-  &--destructive:hover {
-    box-shadow: none;
-    color: $white;
-    background-color: $destructive-dark !important;
-  }
-  &--destructive:active {
-    box-shadow: none;
-    color: $white;
-    background-color: $destructive-darker !important;
-  }
-}
-
 .usa-modal__close {
   background-color: white;
 
@@ -218,6 +205,9 @@ a:visited {
 .usa-checkbox__input:checked + [class*="__label"]::before {
   background-color: $accent-primary !important;
   box-shadow: none !important;
+  background-image: url("../assets/uswds/img/correct8.svg"),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
 }
 
 .usa-checkbox__label {
@@ -287,9 +277,9 @@ ul.usa-sidenav
 
 .usa-pagination .usa-current {
   background-color: $white;
-  color: $brand-dark;
   border-radius: 0.25rem;
   border: 1px solid $border-dark !important;
+  color: $accent-dark !important;
   font-size: 1rem;
   font-weight: 700;
   line-height: 140%;
@@ -297,12 +287,14 @@ ul.usa-sidenav
   text-decoration: underline;
 }
 
-.usa-pagination .usa-current:hover,
-.usa-pagination .usa-current:focus,
-.usa-pagination .usa-current:active {
-  color: $accent-darker;
+.usa-pagination__button:hover,
+.usa-pagination__button:focus,
+.usa-pagination__button:active,
+.usa-pagination__link:hover,
+.usa-pagination__link:focus,
+.usa-pagination__link:active {
+  color: $accent-darker !important;
 }
-
 .usa-pagination__button:hover,
 .usa-pagination__button:focus,
 .usa-pagination__button:active {
@@ -312,6 +304,7 @@ ul.usa-sidenav
 
 .usa-pagination__button,
 .usa-pagination__link {
+  color: $accent-primary;
   font-size: 1rem;
   font-weight: 700;
   line-height: 140%;
