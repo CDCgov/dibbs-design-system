@@ -1,4 +1,6 @@
 @use "variables" as *;
+@use "uswds-core" as *;
+@use "uswds-theme" as *;
 
 html,
 body {
@@ -29,7 +31,16 @@ footer {
 }
 
 h1 {
-  font-family: $serif-font;
+  @include u-font("serif", 12);
+}
+h2 {
+  @include u-font("sans", 11);
+}
+h3 {
+  @include u-font("sans", 8);
+}
+h4 {
+  @include u-font("sans", 5);
 }
 
 a,

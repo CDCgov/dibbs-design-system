@@ -2,6 +2,6 @@
 // and therefore is excluded from the main styles override file
 
 .usa-checkbox__input:checked + [class*="__label"]::before {
-    background-image: url("../../dist/img/correct8.svg"), linear-gradient(transparent, transparent);
-    background-repeat: no-repeat;
+    // relative URL is from the stylesheet entry point, or /public/assets/css
+    background-image: url("../../uswds/img/correct8.svg"), linear-gradient(transparent, transparent);
 }
