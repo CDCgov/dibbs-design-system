@@ -105,13 +105,13 @@ a:visited {
 
   &--unstyled:hover {
     box-shadow: none;
-    color: $brand-primary;
+    color: $brand-dark;
     background-color: transparent !important;
   }
 
   &--unstyled:active {
     box-shadow: none;
-    color: $brand-primary;
+    color: $brand-darker;
     background-color: transparent !important;
   }
 
