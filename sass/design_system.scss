@@ -88,11 +88,13 @@ a:visited {
     color: $accent-darker !important;
   }
 
-  &:disabled {
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active {
     box-shadow: none;
     cursor: not-allowed;
     opacity: 1;
-    background-color: $diabled !important;
+    background-color: color($theme-color-disabled-light) !important;
   }
 
   &--unstyled {
