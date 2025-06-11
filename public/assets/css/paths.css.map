@@ -1,0 +1,1 @@
+{"version":3,"sources":["paths.scss"],"names":[],"mappings":"AAAA,sDACI,0FAAA,CACA,2BAAA","file":"paths.css","sourcesContent":[".usa-checkbox__input:checked + [class*=\"__label\"]::before {\n    background-image: url(\"../../dist/img/correct8.svg\"), linear-gradient(transparent, transparent);\n    background-repeat: no-repeat;\n}\n"]}
