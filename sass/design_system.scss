@@ -130,51 +130,27 @@ a:visited {
   }
 }
 
-.usa-alert--info {
-  background-color: $info-lighter;
-  border-left-color: $info-primary;
-
-  .usa-alert__body {
-    background-color: $info-lighter;
-  }
+.usa-alert--success {
   .usa-alert__body::before {
-    background-color: $info-dark;
+    background-color: color($theme-color-success-dark);
   }
 }
 
-.usa-alert--success {
-  background-color: $success-lighter;
-  border-left-color: $success-primary;
-
-  .usa-alert__body {
-    background-color: $success-lighter;
-  }
+.usa-alert--info {
   .usa-alert__body::before {
-    background-color: $success-dark;
+    background-color: color($theme-color-info-dark);
   }
 }
 
 .usa-alert--warning {
-  background-color: $warning-lighter;
-  border-left-color: $warning-primary;
-
-  .usa-alert__body {
-    background-color: $warning-lighter;
-  }
   .usa-alert__body::before {
-    background-color: $warning-dark;
+    background-color: color($theme-color-warning-dark);
   }
 }
 
 .usa-alert--error {
-  background-color: $error-lighter;
-  border-left-color: $error-primary;
-
-  .usa-alert__body {
-    background-color: $error-lighter;
-  }
   .usa-alert__body::before {
-    background-color: $error-dark;
+    background-color: color($theme-color-error-dark);
   }
 }
 
