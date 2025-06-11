@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: $sans-serif-font;
+  @include u-font("sans", 5);
   line-height: 1.4;
   background-color: $background;
 }
@@ -131,8 +131,15 @@ a:visited {
 }
 
 .usa-alert--info {
-  background-color: $brand-lighter;
-  border-left-color: $brand-primary;
+  background-color: $info-lighter;
+  border-left-color: $info-primary;
+
+  .usa-alert__body {
+    background-color: $info-lighter;
+  }
+  .usa-alert__body::before {
+    background-color: $info-dark;
+  }
 }
 
 .usa-alert--success {
