@@ -199,6 +199,12 @@ a:visited {
   background-color: $accent-primary !important;
   box-shadow: none !important;
 }
+.usa-radio__input:checked + [class*="__label"]::before {
+  background-color: $accent-primary !important;
+  box-shadow:
+    0 0 0 2px $accent-primary,
+    inset 0 0 0 2px #fff;
+}
 
 .usa-checkbox__label {
   cursor: pointer;

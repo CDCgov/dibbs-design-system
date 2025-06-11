@@ -12,24 +12,30 @@
 
         <h2>Buttons</h2>
 
-        <div>
+        <div class="display-flex flex-column">
           <button class="usa-button width-card-lg">Primary button</button>
-          <button disabled="disabled" class="usa-button width-card-lg">
+          <button
+            disabled="disabled"
+            class="usa-button width-card-lg margin-top-3"
+          >
             Disabled button
           </button>
 
           <button
-            class="usa-button width-card-lg usa-button--secondary margin-top-1"
+            class="usa-button width-card-lg usa-button--secondary margin-top-3"
           >
             Secondary button
           </button>
           <button
-            class="usa-button width-card-lg usa-button--unstyled margin-top-1"
+            class="usa-button width-card-lg usa-button--unstyled margin-top-3"
           >
             Tertiary button (link)
           </button>
+          <a class="margin-top-3" href="#"
+            >A link that's styled with the primary brand blue</a
+          >
           <button
-            class="usa-button width-card-lg usa-button--destructive margin-top-1"
+            class="usa-button width-card-lg usa-button--destructive margin-top-3"
           >
             Destructive button
           </button>
@@ -151,6 +157,58 @@
           />
           <label class="usa-checkbox__label" for="check-historical-truth"
             >Sojourner Truth</label
+          >
+        </div>
+
+        <h2>Radio</h2>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-truth"
+            type="radio"
+            name="historical-figures"
+            value="sojourner-truth"
+            checked="checked"
+          />
+          <label class="usa-radio__label" for="historical-truth"
+            >Sojourner Truth</label
+          >
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-douglass"
+            type="radio"
+            name="historical-figures"
+            value="frederick-douglass"
+          />
+          <label class="usa-radio__label" for="historical-douglass"
+            >Frederick Douglass</label
+          >
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-washington"
+            type="radio"
+            name="historical-figures"
+            value="booker-t-washington"
+          />
+          <label class="usa-radio__label" for="historical-washington"
+            >Booker T. Washington</label
+          >
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-carver"
+            type="radio"
+            name="historical-figures"
+            value="george-washington-carver"
+            disabled="disabled"
+          />
+          <label class="usa-radio__label" for="historical-carver"
+            >George Washington Carver</label
           >
         </div>
 

@@ -1,6 +1,4 @@
-# CDCgov GitHub Organization Open Source Project Template
-
-# CDCgov GitHub Organization Open Source Project Template
+# DIBBs Design System
 
 This repo is a compilation of the design system for the Data Integration Building Blocks (DIBBs) project at the CDC.
 It's an attempt to provide a starting point for new and existing DIBBs team to use a unified design language that matches the
