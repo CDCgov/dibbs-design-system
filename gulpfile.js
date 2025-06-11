@@ -14,8 +14,8 @@ uswds.settings.version = 3;
  */
 
 uswds.paths.dist.css = "./public/assets/css";
-uswds.paths.dist.fonts = "./public/dist/fonts";
-uswds.paths.dist.img = "./public/dist/img";
+uswds.paths.dist.img = "./public/uswds/img";
+uswds.paths.dist.fonts = "./public/uswds/fonts";
 uswds.paths.dist.theme = "./sass";
 
 /**
