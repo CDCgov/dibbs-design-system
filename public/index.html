@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/design_system.css" />
+  </head>
+  <body>
+    <header class="text-white">This is the header</header>
+    <div class="main-body">
+      <div class="application-container padding-3">
+        <h1>DIBBs Design System Components</h1>
+
+        <h2>Buttons</h2>
+
+        <div class="display-flex flex-column">
+          <button class="usa-button width-card-lg">Primary button</button>
+          <button
+            disabled="disabled"
+            class="usa-button width-card-lg margin-top-3"
+          >
+            Disabled button
+          </button>
+
+          <button
+            class="usa-button width-card-lg usa-button--secondary margin-top-3"
+          >
+            Secondary button
+          </button>
+          <button
+            class="usa-button width-card-lg usa-button--unstyled margin-top-3"
+          >
+            Tertiary button (link)
+          </button>
+          <a class="margin-top-3" href="#"
+            >A link that's styled with the primary brand blue</a
+          >
+          <button
+            class="usa-button width-card-lg usa-button--destructive margin-top-3"
+          >
+            Destructive button
+          </button>
+        </div>
+        <div>
+          <h2>Site alerts</h2>
+          <div class="usa-alert usa-alert--info">
+            <div class="usa-alert__body">
+              <h4 class="usa-alert__heading">Informative status</h4>
+              <p class="usa-alert__text">
+                Lorem ipsum dolor sit amet,
+                <a class="usa-link" href="javascript:void(0);"
+                  >consectetur adipiscing</a
+                >
+                elit, sed do eiusmod.
+              </p>
+            </div>
+          </div>
+          <div class="usa-alert usa-alert--success">
+            <div class="usa-alert__body">
+              <h4 class="usa-alert__heading">Informative status</h4>
+              <p class="usa-alert__text">
+                Lorem ipsum dolor sit amet,
+                <a class="usa-link" href="javascript:void(0);"
+                  >consectetur adipiscing</a
+                >
+                elit, sed do eiusmod.
+              </p>
+            </div>
+          </div>
+          <div class="usa-alert usa-alert--error">
+            <div class="usa-alert__body">
+              <h4 class="usa-alert__heading">Informative status</h4>
+              <p class="usa-alert__text">
+                Lorem ipsum dolor sit amet,
+                <a class="usa-link" href="javascript:void(0);"
+                  >consectetur adipiscing</a
+                >
+                elit, sed do eiusmod.
+              </p>
+            </div>
+          </div>
+          <div class="usa-alert usa-alert--warning">
+            <div class="usa-alert__body">
+              <h4 class="usa-alert__heading">Informative status</h4>
+              <p class="usa-alert__text">
+                Lorem ipsum dolor sit amet,
+                <a class="usa-link" href="javascript:void(0);"
+                  >consectetur adipiscing</a
+                >
+                elit, sed do eiusmod.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Step indicator</h2>
+
+        <div class="usa-step-indicator">
+          <ol class="usa-step-indicator__segments">
+            <li
+              class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+            >
+              <span class="usa-step-indicator__segment-label"
+                >Personal information
+                <span class="usa-sr-only">completed</span></span
+              >
+            </li>
+            <li
+              class="usa-step-indicator__segment usa-step-indicator__segment--complete"
+            >
+              <span class="usa-step-indicator__segment-label"
+                >Household status
+                <span class="usa-sr-only">completed</span></span
+              >
+            </li>
+            <li
+              class="usa-step-indicator__segment usa-step-indicator__segment--current"
+              aria-current="true"
+            >
+              <span class="usa-step-indicator__segment-label"
+                >Supporting documents</span
+              >
+            </li>
+            <li class="usa-step-indicator__segment">
+              <span class="usa-step-indicator__segment-label"
+                >Signature <span class="usa-sr-only">not completed</span></span
+              >
+            </li>
+            <li class="usa-step-indicator__segment">
+              <span class="usa-step-indicator__segment-label"
+                >Review and submit
+                <span class="usa-sr-only">not completed</span></span
+              >
+            </li>
+          </ol>
+          <div class="usa-step-indicator__header">
+            <h4 class="usa-step-indicator__heading">
+              <span class="usa-step-indicator__heading-counter"
+                ><span class="usa-sr-only">Step</span>
+                <span class="usa-step-indicator__current-step">3</span>
+                <span class="usa-step-indicator__total-steps">of 5</span> </span
+              ><span class="usa-step-indicator__heading-text"
+                >Supporting documents</span
+              >
+            </h4>
+          </div>
+        </div>
+
+        <h2>Checkbox</h2>
+        <div class="usa-checkbox">
+          <input
+            class="usa-checkbox__input"
+            id="check-historical-truth"
+            type="checkbox"
+            name="historical-figures"
+            value="sojourner-truth"
+            checked="checked"
+          />
+          <label class="usa-checkbox__label" for="check-historical-truth"
+            >Sojourner Truth</label
+          >
+        </div>
+
+        <h2>Radio</h2>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-truth"
+            type="radio"
+            name="historical-figures"
+            value="sojourner-truth"
+            checked="checked"
+          />
+          <label class="usa-radio__label" for="historical-truth"
+            >Sojourner Truth</label
+          >
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-douglass"
+            type="radio"
+            name="historical-figures"
+            value="frederick-douglass"
+          />
+          <label class="usa-radio__label" for="historical-douglass"
+            >Frederick Douglass</label
+          >
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-washington"
+            type="radio"
+            name="historical-figures"
+            value="booker-t-washington"
+          />
+          <label class="usa-radio__label" for="historical-washington"
+            >Booker T. Washington</label
+          >
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="historical-carver"
+            type="radio"
+            name="historical-figures"
+            value="george-washington-carver"
+            disabled="disabled"
+          />
+          <label class="usa-radio__label" for="historical-carver"
+            >George Washington Carver</label
+          >
+        </div>
+
+        <h2>Pagination</h2>
+        <nav aria-label="Pagination" class="usa-pagination">
+          <ul class="usa-pagination__list">
+            <li class="usa-pagination__item usa-pagination__arrow">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__link usa-pagination__previous-page"
+                aria-label="Previous page"
+                ><svg class="usa-icon" aria-hidden="true" role="img">
+                  <use href="/assets/img/sprite.svg#navigate_before"></use>
+                </svg>
+                <span class="usa-pagination__link-text">Previous</span></a
+              >
+            </li>
+            <li class="usa-pagination__item usa-pagination__page-no">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__button"
+                aria-label="Page 1"
+                >1</a
+              >
+            </li>
+            <li
+              class="usa-pagination__item usa-pagination__overflow"
+              aria-label="ellipsis indicating non-visible pages"
+            >
+              <span>…</span>
+            </li>
+            <li class="usa-pagination__item usa-pagination__page-no">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__button"
+                aria-label="Page 9"
+                >9</a
+              >
+            </li>
+            <li class="usa-pagination__item usa-pagination__page-no">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__button usa-current"
+                aria-label="Page 10"
+                aria-current="page"
+                >10</a
+              >
+            </li>
+            <li class="usa-pagination__item usa-pagination__page-no">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__button"
+                aria-label="Page 11"
+                >11</a
+              >
+            </li>
+            <li
+              class="usa-pagination__item usa-pagination__overflow"
+              aria-label="ellipsis indicating non-visible pages"
+            >
+              <span>…</span>
+            </li>
+            <li class="usa-pagination__item usa-pagination__page-no">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__button"
+                aria-label="Last page, page 24"
+                >24</a
+              >
+            </li>
+            <li class="usa-pagination__item usa-pagination__arrow">
+              <a
+                href="javascript:void(0);"
+                class="usa-pagination__link usa-pagination__next-page"
+                aria-label="Next page"
+                ><span class="usa-pagination__link-text">Next </span
+                ><svg class="usa-icon" aria-hidden="true" role="img">
+                  <use href="/assets/img/sprite.svg#navigate_next"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <footer class="text-white">This is the footer</footer>
+  </body>
+</html>

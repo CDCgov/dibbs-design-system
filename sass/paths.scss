@@ -1,0 +1,7 @@
+// this file is here to fix some pathing issues for our specific compile setup
+// and therefore is excluded from the main styles override file
+
+.usa-checkbox__input:checked + [class*="__label"]::before {
+    // relative URL is from the stylesheet entry point, or /public/assets/css
+    background-image: url("../../uswds/img/correct8.svg"), linear-gradient(transparent, transparent);
+}
