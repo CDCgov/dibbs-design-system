@@ -1,3 +1,5 @@
+// From https://github.com/CDCgov/dibbs-design-system/blob/main/sass/_variables.scss
+
 @use "uswds-theme" as *;
 @use "_tokens" as *;
 
@@ -9,7 +11,9 @@ $application-max-width: 45rem;
 $application-wide-max-width: 90rem;
 $application-content-margins: 13.75rem;
 $application-content-margins-wide: 10rem;
-$application-content-width-wide: calc($application-wide-max-width - 2 * $application-content-margins-wide);
+$application-content-width-wide: calc(
+  $application-wide-max-width - 2 * $application-content-margins-wide
+);
 
 $header-content-height: 3rem;
 $footer-content-height: 5rem;
@@ -22,22 +26,13 @@ $text-secondary: $gray-500;
 $text-inactive: $gray-20;
 $text-inactive-dark: $gray-600;
 
-$brand-primary: $blue-cool-50; // branded text color
-$brand-light: $blue-cool-20; // ??? is in the swatch
-$brand-lighter: $blue-cool-10; // tertiary link text color
-$brand-lightest: $blue-cool-5; // secondary button background
-$brand-dark: $blue-cool-70; // secondary button text
-$brand-darker: $blue-cool-80; // ??? is in the swatch
-
-$accent-primary: $violet-warm-60; // primary CTA / info color
-$accent-dark: $violet-warm-70; // CTA hover
-$accent-darker: $violet-warm-80; // CTA active
-
 $destructive-primary: #d54309; // primary error / info color
 $destructive-dark: #b51d09; // error hover
 $destructive-darker: #6f3331; // error active
 
-$background: $gray-100;
+// non-opaque color meter read of rgb(from $blue-cool-50 r g b / 5%) then made as minimally 
+// light while maintaining 4.5:1 contrast ratio with the primary color as text on it;
+$background: #fcfcfd;
 $background-dark: $gray-200;
 $background-darker: $gray-300;
 $background-darkest: $gray-500;
