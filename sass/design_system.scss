@@ -1,4 +1,4 @@
-@use "_variables" as *;
+@use "variables" as *;
 @use "uswds-core" as *;
 @use "uswds-theme" as *;
 
@@ -259,7 +259,7 @@ a:active {
   background-color: white;
   border-radius: 0.25rem;
   border: 1px solid $border-dark;
-  color: $accent-dark;
+  color: color("secondary-dark");
   font-size: 1rem;
   font-weight: 700;
   line-height: 140%;
@@ -273,18 +273,18 @@ a:active {
 .usa-pagination__link:hover,
 .usa-pagination__link:focus,
 .usa-pagination__link:active {
-  color: $accent-darker;
+  color: color("secondary-darker");
 }
-.usa-pagination__button:hover,
-.usa-pagination__button:focus,
-.usa-pagination__button:active {
-  border: 1px solid $border;
-  background-color: $hover-neutral;
+.usa-pagination__page-no > .usa-pagination__button {
+  &:hover, &:focus, &:active {
+    border: 1px solid $border;
+    background-color: $hover-neutral;
+  }
 }
 
 .usa-pagination__button,
 .usa-pagination__link {
-  color: $accent-primary;
+  color: color("secondary");
   font-size: 1rem;
   font-weight: 700;
   line-height: 140%;
