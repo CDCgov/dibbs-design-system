@@ -39,7 +39,7 @@ h2,
   @include u-font("sans", 11);
 }
 h3,
-.usa-prose h3 {
+.usa-prose > h3 {
   @include u-font("sans", 8);
 }
 h4,
