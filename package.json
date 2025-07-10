@@ -1,13 +1,20 @@
 {
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "@tailwindcss/postcss": "^4.1.11",
     "@uswds/uswds": "^3.13.0",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
     "@uswds/compile": "^1.3.1"
   },
   "scripts": {
-    "start": "npx http-server",
+    "watch:css": "tailwindcss -i ./tailwindcss/tailwind.css -o ./public/assets/css/tailwind.css --jit --watch",
+    "server": "npx http-server",
+    "start": "run-p watch:css server",
     "compile": "npx gulp compile"
   }
 }

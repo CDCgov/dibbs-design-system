@@ -10,6 +10,7 @@ Included are
 - A Gulp compilation setup that translates the Sass into CSS (this is done by NextJS in most of the existing DIBBs projects / handled in different ways in the actual application frontends)
 - A `design_system.scss` file that provides the actual design system overrides that are the "core" of the design system styles. The engineers made an implementation decision to implement the design system at the Sass level, maintaining the interface of the USWDS utility classes
 - An example `index.html` that showcases the overriden styles / how to use access them in actual markup.
+- Support for TailwindCSS utility classes.
 
 ## Setup
 
