@@ -3,9 +3,34 @@
   <head>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/design_system.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
   </head>
   <body>
-    <header class="text-white">This is the header</header>
+    <header>
+      <div class="text-white bg-blue-cool-80 flex items-center justify-between px-2 py-4 xl:px-20">
+        <h1 class="flex items-center gap-3">
+          <!-- <img src={DibbsLogo} alt="DIBBs" /> -->
+          <span class="font-merriweather text-2xl text-white">
+            Logo
+          </span>
+        </h1>
+        <nav
+          aria-label="Primary navigation"
+          class="usa-nav flex justify-end text-lg text-white"
+        >
+          <a href="#" class="text-white!">
+            <span class='mx-6 inline-block py-1 border-blue-cool-30 border-b-4'>
+              Page1
+            </span>
+          </a>
+          <a href="#" class="text-white!">
+            <span class='mx-6 inline-block py-1'>
+              Page2
+            </span>
+          </a>
+        </nav>
+      </div>
+    </header>
     <div class="main-body">
       <div class="application-container padding-3">
         <h1>DIBBs Design System Components</h1>
